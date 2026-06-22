@@ -4,7 +4,7 @@
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&duration=3000&pause=800&color=00D4FF&center=true&vCenter=true&width=500&lines=Building+Mobile+Apps+%F0%9F%93%B1;Shipping+Full+Stack+Products+%F0%9F%8C%90;Founder+of+PrepTech+AI+%F0%9F%A7%A0;BCA+Student+%7C+2023+%E2%80%94+2026+%F0%9F%8E%93;Code.+Learn.+Build.+Repeat+%F0%9F%9A%80)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&duration=3000&pause=800&color=00D4FF&center=true&vCenter=true&width=500&lines=Building+Mobile+Apps+%F0%9F%93%B1;Shipping+Full+Stack+Products+%F0%9F%8C%90;Founder+of+Prepify+%F0%9F%A7%A0;BCA+Student+%7C+2023+%E2%80%94+2026+%F0%9F%8E%93;Code.+Learn.+Build.+Repeat+%F0%9F%9A%80)](https://github.com/nazmeejawed)
 
 <br/>
 
@@ -23,10 +23,10 @@
 ```kotlin
 val nazmee = Developer(
     name       = "Nazmee Jawed",
-    location   = "Delhi, India 📍",
+    location   = "Gurugram, India 📍",
     education  = "BCA · 2023 – 2026",
     role       = listOf("Android Dev", "Flutter Dev", "Full Stack Learner"),
-    founded    = "Prepify AI 🧠",
+    founded    = "Prepify 🧠",
     status     = "Building in public 🚀"
 )
 ```
@@ -61,7 +61,7 @@ val nazmee = Developer(
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=black)
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
-![Jetpack](https://img.shields.io/badge/Jetpack-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white)
+![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white)
 
 </td>
 <td valign="top" width="50%">
@@ -69,8 +69,8 @@ val nazmee = Developer(
 **Backend & Database**
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-ffffff?style=flat-square&logo=express&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-ffffff?style=flat-square&logo=nextdotjs&logoColor=black)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 
@@ -94,7 +94,7 @@ val nazmee = Developer(
 <tr>
 <td width="50%" valign="top">
 
-### 🧠 Prepify AI
+### 🧠 Prepify
 > AI-powered study planner & mock test platform for students
 
 - Personalized learning paths powered by AI
@@ -177,13 +177,13 @@ val nazmee = Developer(
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=nazmeejawed&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=7B2FBE&text_color=8892A4&rank_icon=github"/>
-&nbsp;
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nazmeejawed&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00D4FF&text_color=8892A4"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=nazmeejawed&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=7B2FBE&text_color=8892A4&rank_icon=github&cache_seconds=1800"/>
 
-<br/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nazmeejawed&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00D4FF&text_color=8892A4&cache_seconds=1800"/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=nazmeejawed&theme=github-dark-blue&hide_border=true&background=0D1117&stroke=0D1117&ring=00D4FF&fire=7B2FBE&currStreakLabel=00D4FF"/>
+<br/><br/>
+
+<img src="https://streak-stats.demolab.com?user=nazmeejawed&theme=dark&hide_border=true&background=0D1117&stroke=0D1117&ring=00D4FF&fire=7B2FBE&currStreakLabel=00D4FF&sideLabels=8892A4&dates=8892A4&sideNums=E6EDF3&currStreakNum=E6EDF3"/>
 
 </div>
 
@@ -191,12 +191,12 @@ val nazmee = Developer(
 
 ## 🏆 Achievements
 
-| Badge | Achievement |
-|-------|-------------|
-| 📱 Shipped | 5+ Mobile Applications |
-| 🌐 Shipped | Full Stack Web Applications |
-| 🔥 Firebase | Auth + Firestore Real-time Integration |
-| 🧠 Founded | Prepify AI — edtech startup |
+| | Achievement |
+|---|---|
+| 📱 | 5+ Mobile Applications Shipped |
+| 🌐 | Full Stack Web Applications Built |
+| 🔥 | Firebase Auth + Firestore Real-time Integration |
+| 🧠 | Founded Prepify — Edtech Startup |
 
 ---
 
@@ -204,11 +204,11 @@ val nazmee = Developer(
 
 <div align="center">
 
-[![Email](https://img.shields.io/badge/📧%20Email-nazmeejawed930%40gmail.com-00D4FF?style=for-the-badge)](mailto:nazmeejawed930@gmail.com)
-
-[![LinkedIn](https://img.shields.io/badge/💼%20LinkedIn-Nazmee%20Jawed-0077B5?style=for-the-badge)](https://www.linkedin.com/in/nazmee-jawed/)
-
-[![GitHub](https://img.shields.io/badge/🐙%20GitHub-nazmeejawed-181717?style=for-the-badge)](https://github.com/nazmeejawed)
+[![Email](https://img.shields.io/badge/Email-nazmeejawed930%40gmail.com-00D4FF?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nazmeejawed930@gmail.com)
+&nbsp;
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Nazmee%20Jawed-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nazmee-jawed/)
+&nbsp;
+[![GitHub](https://img.shields.io/badge/GitHub-nazmeejawed-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nazmeejawed)
 
 </div>
 
