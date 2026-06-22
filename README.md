@@ -1,7 +1,19 @@
-## Hi there 👋
+# Hi 👋, I'm Nazmee Jawed
 
-<!--
-**nazmeejawed/nazmeejawed** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🎓 BCA Student
+
+📱 Android Developer (Kotlin & Jetpack Compose)
+
+🚀 Founder of Prepify AI
+
+🌱 Currently Learning:
+- DSA
+- Backend Development
+- System Design
+
+📫 Reach me:
+- LinkedIn: https://www.linkedin.com/in/nazmee-jawed/
+- Email: your-nazmeejawed930@@gmail.com
 
 Here are some ideas to get you started:
 
@@ -13,4 +25,4 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
--->
+
