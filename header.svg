@@ -1,0 +1,174 @@
+<svg width="900" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes matrix-fall {
+        0% { transform: translateY(-300px); opacity: 0; }
+        10% { opacity: 1; }
+        90% { opacity: 0.3; }
+        100% { transform: translateY(300px); opacity: 0; }
+      }
+      @keyframes glow-pulse {
+        0%, 100% { filter: drop-shadow(0 0 8px #00D4FF) drop-shadow(0 0 20px #00D4FF); }
+        50% { filter: drop-shadow(0 0 20px #00D4FF) drop-shadow(0 0 60px #00D4FF) drop-shadow(0 0 100px #7B2FBE); }
+      }
+      @keyframes slide-in-left {
+        0% { transform: translateX(-100px); opacity: 0; }
+        100% { transform: translateX(0); opacity: 1; }
+      }
+      @keyframes slide-in-right {
+        0% { transform: translateX(100px); opacity: 0; }
+        100% { transform: translateX(0); opacity: 1; }
+      }
+      @keyframes fade-up {
+        0% { transform: translateY(30px); opacity: 0; }
+        100% { transform: translateY(0); opacity: 1; }
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      @keyframes scan-line {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(300px); }
+      }
+      @keyframes border-glow {
+        0%, 100% { stroke: #00D4FF; stroke-opacity: 0.6; }
+        50% { stroke: #7B2FBE; stroke-opacity: 1; }
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes color-shift {
+        0% { fill: #00D4FF; }
+        33% { fill: #7B2FBE; }
+        66% { fill: #3DDC84; }
+        100% { fill: #00D4FF; }
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: -20; }
+      }
+    </style>
+
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#0f1923;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0D1117;stop-opacity:1"/>
+    </radialGradient>
+
+    <filter id="glow-blue">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="glow-strong">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="300" fill="url(#bg-grad)"/>
+
+  <!-- Grid lines -->
+  <g opacity="0.06" stroke="#00D4FF" stroke-width="0.5">
+    <line x1="0" y1="50" x2="900" y2="50"/>
+    <line x1="0" y1="100" x2="900" y2="100"/>
+    <line x1="0" y1="150" x2="900" y2="150"/>
+    <line x1="0" y1="200" x2="900" y2="200"/>
+    <line x1="0" y1="250" x2="900" y2="250"/>
+    <line x1="150" y1="0" x2="150" y2="300"/>
+    <line x1="300" y1="0" x2="300" y2="300"/>
+    <line x1="450" y1="0" x2="450" y2="300"/>
+    <line x1="600" y1="0" x2="600" y2="300"/>
+    <line x1="750" y1="0" x2="750" y2="300"/>
+  </g>
+
+  <!-- Scan line effect -->
+  <rect width="900" height="2" fill="#00D4FF" opacity="0.08">
+    <animateTransform attributeName="transform" type="translate" from="0,0" to="0,300" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Matrix rain columns -->
+  <g font-family="monospace" font-size="11" fill="#00D4FF" opacity="0.15">
+    <text x="20" style="animation: matrix-fall 2.1s linear infinite;">1 0 1 1 0 1 0 0 1 1 0 1 1 0 0 1 0 1 1 0</text>
+    <text x="60" style="animation: matrix-fall 1.8s linear infinite; animation-delay: 0.3s;">0 1 0 0 1 1 0 1 0 0 1 0 1 1 0 0 1 0 0 1</text>
+    <text x="820" style="animation: matrix-fall 2.4s linear infinite; animation-delay: 0.8s;">1 1 0 1 0 0 1 1 0 1 0 1 0 0 1 1 0 1 0 0</text>
+    <text x="860" style="animation: matrix-fall 1.6s linear infinite; animation-delay: 1.2s;">0 0 1 0 1 1 0 0 1 0 1 0 1 1 0 0 1 0 1 1</text>
+  </g>
+
+  <!-- Corner brackets - top left -->
+  <g stroke="#00D4FF" stroke-width="2" fill="none" opacity="0.8">
+    <polyline points="15,45 15,15 45,15" style="animation: border-glow 2s ease-in-out infinite;"/>
+    <!-- top right -->
+    <polyline points="855,15 885,15 885,45" style="animation: border-glow 2s ease-in-out infinite; animation-delay:0.5s;"/>
+    <!-- bottom left -->
+    <polyline points="15,255 15,285 45,285" style="animation: border-glow 2s ease-in-out infinite; animation-delay:1s;"/>
+    <!-- bottom right -->
+    <polyline points="855,285 885,285 885,255" style="animation: border-glow 2s ease-in-out infinite; animation-delay:1.5s;"/>
+  </g>
+
+  <!-- Animated dashed border -->
+  <rect x="8" y="8" width="884" height="284" rx="4" fill="none" stroke="#00D4FF" stroke-width="0.5" stroke-dasharray="8,4" opacity="0.3">
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Top label -->
+  <text x="450" y="38" text-anchor="middle" font-family="monospace" font-size="10" fill="#00D4FF" opacity="0.6" style="animation: fade-up 1s ease forwards;">
+    [ DEVELOPER PROFILE v2.0 ]
+  </text>
+
+  <!-- Main name - glowing -->
+  <g style="animation: glow-pulse 3s ease-in-out infinite;">
+    <text x="450" y="138" text-anchor="middle" font-family="monospace" font-size="58" font-weight="bold" fill="#00D4FF" filter="url(#glow-strong)">
+      NAZMEE JAWED
+    </text>
+  </g>
+
+  <!-- Subtitle with slide in -->
+  <text x="450" y="175" text-anchor="middle" font-family="monospace" font-size="15" fill="#58A6FF" opacity="0" style="animation: fade-up 0.8s ease 0.5s forwards;">
+    Android  •  Flutter  •  Full Stack Developer
+  </text>
+
+  <!-- Tags row -->
+  <!-- Tag 1: Gurugram -->
+  <g style="animation: slide-in-left 0.7s ease 0.8s both;">
+    <rect x="210" y="198" width="130" height="22" rx="11" fill="#0D2137" stroke="#1a4a6e" stroke-width="0.8"/>
+    <text x="275" y="213" text-anchor="middle" font-family="monospace" font-size="10" fill="#58A6FF">📍 Gurugram, India</text>
+  </g>
+  <!-- Tag 2: BCA -->
+  <g style="animation: fade-up 0.7s ease 1s both;">
+    <rect x="355" y="198" width="100" height="22" rx="11" fill="#1a1230" stroke="#3d2080" stroke-width="0.8"/>
+    <text x="405" y="213" text-anchor="middle" font-family="monospace" font-size="10" fill="#bf91f7">🎓 BCA · 2026</text>
+  </g>
+  <!-- Tag 3: Prepify -->
+  <g style="animation: slide-in-right 0.7s ease 0.8s both;">
+    <rect x="470" y="198" width="120" height="22" rx="11" fill="#0d2a1f" stroke="#1a5c35" stroke-width="0.8"/>
+    <text x="530" y="213" text-anchor="middle" font-family="monospace" font-size="10" fill="#56d364">🧠 Founder · Prepify</text>
+  </g>
+
+  <!-- Bottom status line -->
+  <g style="animation: fade-up 0.8s ease 1.2s both;" opacity="0">
+    <text x="450" y="258" text-anchor="middle" font-family="monospace" font-size="11" fill="#3DDC84" opacity="0.9">
+      &gt; Building in public 🚀 &nbsp;|&nbsp; Code. Learn. Build. Repeat.
+    </text>
+  </g>
+
+  <!-- Blinking cursor -->
+  <rect x="636" y="245" width="8" height="14" fill="#00D4FF">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Floating dots decoration -->
+  <circle cx="80" cy="150" r="3" fill="#7B2FBE" opacity="0.6">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-10;0,0" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="820" cy="150" r="3" fill="#00D4FF" opacity="0.6">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,10;0,0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="80" r="2" fill="#3DDC84" opacity="0.5">
+    <animateTransform attributeName="transform" type="translate" values="0,0;5,0;0,0" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="800" cy="220" r="2" fill="#3DDC84" opacity="0.5">
+    <animateTransform attributeName="transform" type="translate" values="0,0;-5,0;0,0" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+
+</svg>

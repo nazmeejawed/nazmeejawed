@@ -1,0 +1,61 @@
+<svg width="900" height="80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes fill-bar {
+        0% { width: 0; }
+        100% { width: var(--w); }
+      }
+      @keyframes fade-in {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  </defs>
+
+  <rect width="900" height="80" fill="#0D1117"/>
+
+  <!-- Mobile Apps -->
+  <g style="animation: fade-in 0.5s ease 0.2s both;" opacity="0">
+    <text x="80" y="22" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#00D4FF">5+</text>
+    <text x="80" y="38" text-anchor="middle" font-family="monospace" font-size="9" fill="#8892A4">MOBILE APPS</text>
+    <rect x="20" y="48" width="120" height="4" rx="2" fill="#161B22"/>
+    <rect x="20" y="48" width="0" height="4" rx="2" fill="#00D4FF">
+      <animate attributeName="width" from="0" to="120" dur="1s" begin="0.3s" fill="freeze"/>
+    </rect>
+  </g>
+
+  <!-- Languages -->
+  <g style="animation: fade-in 0.5s ease 0.4s both;" opacity="0">
+    <text x="280" y="22" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#7B2FBE">6+</text>
+    <text x="280" y="38" text-anchor="middle" font-family="monospace" font-size="9" fill="#8892A4">LANGUAGES</text>
+    <rect x="220" y="48" width="120" height="4" rx="2" fill="#161B22"/>
+    <rect x="220" y="48" width="0" height="4" rx="2" fill="#7B2FBE">
+      <animate attributeName="width" from="0" to="110" dur="1s" begin="0.5s" fill="freeze"/>
+    </rect>
+  </g>
+
+  <!-- Startup -->
+  <g style="animation: fade-in 0.5s ease 0.6s both;" opacity="0">
+    <text x="480" y="22" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#3DDC84">1</text>
+    <text x="480" y="38" text-anchor="middle" font-family="monospace" font-size="9" fill="#8892A4">STARTUP FOUNDED</text>
+    <rect x="420" y="48" width="120" height="4" rx="2" fill="#161B22"/>
+    <rect x="420" y="48" width="0" height="4" rx="2" fill="#3DDC84">
+      <animate attributeName="width" from="0" to="80" dur="1s" begin="0.7s" fill="freeze"/>
+    </rect>
+  </g>
+
+  <!-- DSA -->
+  <g style="animation: fade-in 0.5s ease 0.8s both;" opacity="0">
+    <text x="680" y="22" text-anchor="middle" font-family="monospace" font-size="20" font-weight="bold" fill="#F7DF1E">∞</text>
+    <text x="680" y="38" text-anchor="middle" font-family="monospace" font-size="9" fill="#8892A4">DSA GRIND</text>
+    <rect x="620" y="48" width="120" height="4" rx="2" fill="#161B22"/>
+    <rect x="620" y="48" width="0" height="4" rx="2" fill="#F7DF1E">
+      <animate attributeName="width" from="0" to="120" dur="1.5s" begin="0.9s" fill="freeze"/>
+    </rect>
+  </g>
+
+  <!-- Dividers -->
+  <line x1="165" y1="10" x2="165" y2="65" stroke="#161B22" stroke-width="1"/>
+  <line x1="365" y1="10" x2="365" y2="65" stroke="#161B22" stroke-width="1"/>
+  <line x1="565" y1="10" x2="565" y2="65" stroke="#161B22" stroke-width="1"/>
+</svg>
