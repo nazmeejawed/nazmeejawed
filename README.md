@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/nazmeejawed/nazmeejawed/main/header.svg" width="100%" alt="Nazmee Jawed"/>
+<img src="https://raw.githubusercontent.com/nazmeejawed/nazmeejawed/main/header.svg?v=2" width="100%" alt="Nazmee Jawed"/>
 
 <br/>
 
@@ -43,7 +43,7 @@ val nazmee = Developer(
 ## 📊 At a Glance
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/nazmeejawed/nazmeejawed/main/stats-bar.svg" width="100%" alt="Stats"/>
+<img src="https://raw.githubusercontent.com/nazmeejawed/nazmeejawed/main/stats-bar.svg?v=2" width="100%" alt="Stats"/>
 </div>
 
 ---
