@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/nazmeejawed/nazmeejawed/main/header.svg?v=3" width="100%" alt="Nazmee Jawed"/>
+<img src="https://raw.githubusercontent.com/nazmeejawed/nazmeejawed/main/header.svg?v=4" width="100%" alt="Nazmee Jawed"/>
 
 <br/>
 

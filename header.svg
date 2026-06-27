@@ -127,8 +127,8 @@
   </g>
   <!-- Tag 3: Prepify -->
   <g style="animation: slide-in-right 0.7s ease 0.8s both;">
-    <rect x="470" y="198" width="120" height="22" rx="11" fill="#0d2a1f" stroke="#1a5c35" stroke-width="0.8"/>
-    <text x="530" y="213" text-anchor="middle" font-family="monospace" font-size="10" fill="#56d364">🧠 Founder · Prepify</text>
+    <rect x="470" y="198" width="150" height="22" rx="11" fill="#0d2a1f" stroke="#1a5c35" stroke-width="0.8"/>
+    <text x="545" y="213" text-anchor="middle" font-family="monospace" font-size="10" fill="#56d364">🧠 Founder · Prepify</text>
   </g>
 
   <!-- Bottom status line -->
