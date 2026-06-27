@@ -148,7 +148,7 @@
   <!-- Bottom status line -->
   <g style="animation: fade-up 0.8s ease 1.2s both;" opacity="0">
     <text x="450" y="258" text-anchor="middle" font-family="monospace" font-size="11" fill="#3DDC84" opacity="0.9">
-      &gt; Building in public 🚀 &nbsp;|&nbsp; Code. Learn. Build. Repeat.
+      &gt; Building in public 🚀 &#160;|&#160; Code. Learn. Build. Repeat.
     </text>
   </g>
 
