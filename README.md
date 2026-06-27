@@ -153,8 +153,6 @@ Live weather with Lottie animations
 
 <br/><br/>
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=nazmeejawed&theme=darkhub&no-frame=true&column=6&margin-w=6)](https://github.com/nazmeejawed)
-
 <br/><br/>
 
 <!-- Snake Animation -->
