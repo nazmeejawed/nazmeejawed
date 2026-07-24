@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://github.com/nazmeejawed">
-  <img src="https://raw.githubusercontent.com/nazmeejawed/nazmeejawed/main/header.svg?v=12" width="100%" alt="Nazmee Jawed"/>
+  <img src="https://raw.githubusercontent.com/nazmeejawed/nazmeejawed/main/header.svg?v=15" width="100%" alt="Nazmee Jawed"/>
 </a>
 
 <br/>

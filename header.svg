@@ -1,13 +1,9 @@
-<svg width="900" height="300" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <style>
-      @keyframes glow-pulse {
-        0%, 100% { filter: drop-shadow(0 0 8px #00D4FF) drop-shadow(0 0 20px #00D4FF); }
-        50% { filter: drop-shadow(0 0 20px #00D4FF) drop-shadow(0 0 60px #00D4FF) drop-shadow(0 0 100px #7B2FBE); }
-      }
       @keyframes fade-up {
-        0% { transform: translateY(20px); opacity: 0; }
-        100% { transform: translateY(0); opacity: 1; }
+        from { transform: translateY(20px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
       }
       @keyframes blink {
         0%, 100% { opacity: 1; }
@@ -17,75 +13,71 @@
         0%, 100% { stroke: #00D4FF; stroke-opacity: 0.5; }
         50% { stroke: #7B2FBE; stroke-opacity: 1; }
       }
-      @keyframes slide-in-left {
-        0% { transform: translateX(-80px); opacity: 0; }
-        100% { transform: translateX(0); opacity: 1; }
+      @keyframes slide-left {
+        from { transform: translateX(-60px); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
       }
-      @keyframes slide-in-right {
-        0% { transform: translateX(80px); opacity: 0; }
-        100% { transform: translateX(0); opacity: 1; }
+      @keyframes slide-right {
+        from { transform: translateX(60px); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
       }
-      @keyframes particle-float {
-        0%, 100% { opacity: 0.5; }
+      @keyframes name-glow {
+        0%, 100% { opacity: 0.85; }
         50% { opacity: 1; }
       }
     </style>
-    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0a0e17"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080c14"/>
       <stop offset="50%" stop-color="#0D1117"/>
-      <stop offset="100%" stop-color="#0a0f1a"/>
+      <stop offset="100%" stop-color="#080d16"/>
     </linearGradient>
-    <linearGradient id="name-grad" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="ng" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#00D4FF"/>
-      <stop offset="50%" stop-color="#58A6FF"/>
+      <stop offset="40%" stop-color="#58A6FF"/>
       <stop offset="100%" stop-color="#7B2FBE"/>
     </linearGradient>
-    <radialGradient id="center-glow" cx="50%" cy="45%" r="50%">
-      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.06"/>
-      <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+    <radialGradient id="cg" cx="50%" cy="45%" r="45%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
     </radialGradient>
   </defs>
 
-  <!-- Background -->
-  <rect width="900" height="300" fill="url(#bg-grad)"/>
-  
-  <!-- Center glow -->
-  <ellipse cx="450" cy="130" rx="350" ry="140" fill="url(#center-glow)"/>
+  <!-- BG -->
+  <rect width="900" height="300" fill="url(#bg)"/>
+  <ellipse cx="450" cy="128" rx="320" ry="130" fill="url(#cg)"/>
 
-  <!-- Hex pattern left -->
+  <!-- Hex grid left -->
   <g opacity="0.05" fill="none" stroke="#00D4FF" stroke-width="0.5">
-    <path d="M80,35 l18,10 l0,20 l-18,10 l-18,-10 l0,-20 z"/>
-    <path d="M130,35 l18,10 l0,20 l-18,10 l-18,-10 l0,-20 z"/>
-    <path d="M105,70 l18,10 l0,20 l-18,10 l-18,-10 l0,-20 z"/>
+    <path d="M75,30 l16,9 v18 l-16,9 l-16,-9 v-18z"/>
+    <path d="M120,30 l16,9 v18 l-16,9 l-16,-9 v-18z"/>
+    <path d="M97,62 l16,9 v18 l-16,9 l-16,-9 v-18z"/>
   </g>
-  <!-- Hex pattern right -->
   <g opacity="0.05" fill="none" stroke="#00D4FF" stroke-width="0.5">
-    <path d="M770,35 l18,10 l0,20 l-18,10 l-18,-10 l0,-20 z"/>
-    <path d="M820,35 l18,10 l0,20 l-18,10 l-18,-10 l0,-20 z"/>
-    <path d="M795,70 l18,10 l0,20 l-18,10 l-18,-10 l0,-20 z"/>
+    <path d="M780,30 l16,9 v18 l-16,9 l-16,-9 v-18z"/>
+    <path d="M825,30 l16,9 v18 l-16,9 l-16,-9 v-18z"/>
+    <path d="M802,62 l16,9 v18 l-16,9 l-16,-9 v-18z"/>
   </g>
-  <!-- Hex bottom -->
   <g opacity="0.04" fill="none" stroke="#7B2FBE" stroke-width="0.5">
-    <path d="M80,220 l18,10 l0,20 l-18,10 l-18,-10 l0,-20 z"/>
-    <path d="M130,220 l18,10 l0,20 l-18,10 l-18,-10 l0,-20 z"/>
-    <path d="M770,220 l18,10 l0,20 l-18,10 l-18,-10 l0,-20 z"/>
-    <path d="M820,220 l18,10 l0,20 l-18,10 l-18,-10 l0,-20 z"/>
+    <path d="M75,215 l16,9 v18 l-16,9 l-16,-9 v-18z"/>
+    <path d="M120,215 l16,9 v18 l-16,9 l-16,-9 v-18z"/>
+    <path d="M780,215 l16,9 v18 l-16,9 l-16,-9 v-18z"/>
+    <path d="M825,215 l16,9 v18 l-16,9 l-16,-9 v-18z"/>
   </g>
 
   <!-- Wave lines -->
-  <path d="M0,140 Q150,110 300,140 Q450,170 600,140 Q750,110 900,140" fill="none" stroke="#00D4FF" stroke-width="1" opacity="0.08"/>
-  <path d="M0,150 Q150,170 300,150 Q450,130 600,150 Q750,170 900,150" fill="none" stroke="#7B2FBE" stroke-width="0.8" opacity="0.06"/>
+  <path d="M0,138 Q150,108 300,138 Q450,168 600,138 Q750,108 900,138" fill="none" stroke="#00D4FF" stroke-width="0.8" opacity="0.07"/>
+  <path d="M0,148 Q150,168 300,148 Q450,128 600,148 Q750,168 900,148" fill="none" stroke="#7B2FBE" stroke-width="0.6" opacity="0.05"/>
 
-  <!-- Orbital ellipses -->
-  <ellipse cx="450" cy="130" rx="380" ry="16" fill="none" stroke="#00D4FF" stroke-width="0.3" opacity="0.1" stroke-dasharray="6,8">
-    <animateTransform attributeName="transform" type="rotate" from="0 450 130" to="360 450 130" dur="45s" repeatCount="indefinite"/>
+  <!-- Orbit rings -->
+  <ellipse cx="450" cy="128" rx="370" ry="15" fill="none" stroke="#00D4FF" stroke-width="0.3" opacity="0.08" stroke-dasharray="6,8">
+    <animateTransform attributeName="transform" type="rotate" from="0 450 128" to="360 450 128" dur="50s" repeatCount="indefinite"/>
   </ellipse>
-  <ellipse cx="450" cy="130" rx="340" ry="20" fill="none" stroke="#7B2FBE" stroke-width="0.25" opacity="0.08" stroke-dasharray="4,10">
-    <animateTransform attributeName="transform" type="rotate" from="360 450 130" to="0 450 130" dur="38s" repeatCount="indefinite"/>
+  <ellipse cx="450" cy="128" rx="330" ry="19" fill="none" stroke="#7B2FBE" stroke-width="0.25" opacity="0.06" stroke-dasharray="4,10">
+    <animateTransform attributeName="transform" type="rotate" from="360 450 128" to="0 450 128" dur="40s" repeatCount="indefinite"/>
   </ellipse>
 
   <!-- Corner brackets -->
-  <g stroke="#00D4FF" stroke-width="1.5" fill="none" opacity="0.6">
+  <g stroke="#00D4FF" stroke-width="1.5" fill="none" opacity="0.5">
     <polyline points="12,32 12,12 32,12" style="animation: border-glow 3s ease-in-out infinite;"/>
     <polyline points="868,12 888,12 888,32" style="animation: border-glow 3s ease-in-out infinite; animation-delay:0.75s;"/>
     <polyline points="12,268 12,288 32,288" style="animation: border-glow 3s ease-in-out infinite; animation-delay:1.5s;"/>
@@ -93,52 +85,46 @@
   </g>
 
   <!-- Dashed border -->
-  <rect x="6" y="6" width="888" height="288" rx="5" fill="none" stroke="#00D4FF" stroke-width="0.4" stroke-dasharray="10,5" opacity="0.15">
-    <animate attributeName="stroke-dashoffset" from="0" to="-30" dur="1.5s" repeatCount="indefinite"/>
+  <rect x="6" y="6" width="888" height="288" rx="5" fill="none" stroke="#00D4FF" stroke-width="0.4" stroke-dasharray="10,5" opacity="0.12">
+    <animate attributeName="stroke-dashoffset" from="0" to="-30" dur="2s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- Top system label -->
-  <text x="450" y="38" text-anchor="middle" font-family="monospace" font-size="9" fill="#58A6FF" opacity="0" style="animation: fade-up 0.8s ease 0.2s forwards;">
-    [ DEVELOPER PROFILE ] — SYSTEM ONLINE
-  </text>
+  <!-- Top label -->
+  <text x="450" y="38" text-anchor="middle" font-family="monospace" font-size="9" fill="#58A6FF" opacity="0" style="animation: fade-up 0.8s ease 0.2s forwards;">[ DEVELOPER PROFILE ] - SYSTEM ONLINE</text>
 
-  <!-- Left code decoration -->
-  <g style="animation: slide-in-left 1s ease 0.4s both;" font-family="monospace" font-size="8" fill="#3DDC84" opacity="0.2">
-    <text x="25" y="75">fn main() {</text>
-    <text x="35" y="87">build();</text>
-    <text x="35" y="99">deploy();</text>
-    <text x="25" y="111">}</text>
+  <!-- Left code -->
+  <g style="animation: slide-left 1s ease 0.4s both;" font-family="monospace" font-size="8" fill="#3DDC84" opacity="0.18">
+    <text x="22" y="78">fn main() &#123;</text>
+    <text x="32" y="90">build();</text>
+    <text x="32" y="102">deploy();</text>
+    <text x="22" y="114">&#125;</text>
   </g>
 
-  <!-- Right code decoration -->
-  <g style="animation: slide-in-right 1s ease 0.4s both;" font-family="monospace" font-size="8" fill="#7B2FBE" opacity="0.2" text-anchor="end">
-    <text x="875" y="75">class App {</text>
-    <text x="865" y="87">init()</text>
-    <text x="865" y="99">launch()</text>
-    <text x="875" y="111">}</text>
+  <!-- Right code -->
+  <g style="animation: slide-right 1s ease 0.4s both;" font-family="monospace" font-size="8" fill="#7B2FBE" opacity="0.18" text-anchor="end">
+    <text x="878" y="78">class App &#123;</text>
+    <text x="868" y="90">init()</text>
+    <text x="868" y="102">launch()</text>
+    <text x="878" y="114">&#125;</text>
   </g>
 
   <!-- Main name -->
-  <g style="animation: glow-pulse 4s ease-in-out infinite;">
-    <text x="450" y="125" text-anchor="middle" font-family="monospace" font-size="56" font-weight="bold" fill="url(#name-grad)">
-      NAZMEE JAWED
-    </text>
+  <g style="animation: name-glow 3s ease-in-out infinite;">
+    <text x="450" y="128" text-anchor="middle" font-family="monospace" font-size="56" font-weight="bold" fill="url(#ng)">NAZMEE JAWED</text>
   </g>
 
   <!-- Subtitle -->
-  <text x="450" y="162" text-anchor="middle" font-family="monospace" font-size="14" fill="#58A6FF" opacity="0" style="animation: fade-up 0.8s ease 0.5s forwards;">
-    Android  ·  Flutter  ·  Full Stack Developer
-  </text>
+  <text x="450" y="163" text-anchor="middle" font-family="monospace" font-size="14" fill="#58A6FF" opacity="0" style="animation: fade-up 0.8s ease 0.5s forwards;">Android  &#183;  Flutter  &#183;  Full Stack Developer</text>
 
-  <!-- Divider -->
+  <!-- Divider line -->
   <line x1="320" y1="180" x2="580" y2="180" stroke="#161B22" stroke-width="1"/>
-  <line x1="380" y1="180" x2="520" y2="180" stroke="#00D4FF" stroke-width="1" opacity="0.3">
+  <line x1="380" y1="180" x2="520" y2="180" stroke="#00D4FF" stroke-width="1" opacity="0.25">
     <animate attributeName="x1" values="380;320;380" dur="3s" repeatCount="indefinite"/>
     <animate attributeName="x2" values="520;580;520" dur="3s" repeatCount="indefinite"/>
   </line>
 
   <!-- Tags -->
-  <g style="animation: slide-in-left 0.8s ease 0.8s both;">
+  <g style="animation: slide-left 0.8s ease 0.8s both;">
     <rect x="205" y="195" width="130" height="23" rx="11" fill="#0D2137" stroke="#163d5c" stroke-width="0.7"/>
     <text x="270" y="211" text-anchor="middle" font-family="monospace" font-size="10" fill="#58A6FF">Gurugram, India</text>
   </g>
@@ -146,24 +132,22 @@
     <rect x="350" y="195" width="105" height="23" rx="11" fill="#1a1230" stroke="#3d2080" stroke-width="0.7"/>
     <text x="402" y="211" text-anchor="middle" font-family="monospace" font-size="10" fill="#bf91f7">BCA 2026</text>
   </g>
-  <g style="animation: slide-in-right 0.8s ease 0.8s both;">
+  <g style="animation: slide-right 0.8s ease 0.8s both;">
     <rect x="470" y="195" width="150" height="23" rx="11" fill="#0d2a1f" stroke="#1a5c35" stroke-width="0.7"/>
     <text x="545" y="211" text-anchor="middle" font-family="monospace" font-size="10" fill="#56d364">Founder - Prepify</text>
   </g>
 
   <!-- Status line -->
   <g style="animation: fade-up 1s ease 1.2s both;" opacity="0">
-    <text x="450" y="252" text-anchor="middle" font-family="monospace" font-size="11" fill="#3DDC84" opacity="0.9">
-      &gt; Building in public | Code. Learn. Build. Repeat.
-    </text>
+    <text x="450" y="252" text-anchor="middle" font-family="monospace" font-size="11" fill="#3DDC84" opacity="0.9">&gt; Building in public | Code. Learn. Build. Repeat.</text>
   </g>
 
-  <!-- Blinking cursor -->
+  <!-- Cursor -->
   <rect x="618" y="240" width="7" height="13" fill="#00D4FF" rx="1">
     <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- Particles -->
+  <!-- Floating particles -->
   <circle cx="120" cy="145" r="2" fill="#00D4FF" opacity="0.5">
     <animateTransform attributeName="transform" type="translate" values="0,0;0,-12;0,0" dur="3s" repeatCount="indefinite"/>
   </circle>
@@ -184,8 +168,6 @@
   </circle>
 
   <!-- Version -->
-  <text x="450" y="285" text-anchor="middle" font-family="monospace" font-size="8" fill="#30363d" opacity="0.6">
-    v3.0 // nazmeejawed.dev
-  </text>
+  <text x="450" y="285" text-anchor="middle" font-family="monospace" font-size="8" fill="#30363d" opacity="0.5">v3.0 // nazmeejawed.dev</text>
 
 </svg>
