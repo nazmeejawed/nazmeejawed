@@ -245,13 +245,13 @@ object NazmeeJawed : Developer() {
 <div align="center">
 <h2>📊 GitHub Stats</h2>
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=nazmeejawed&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=7B2FBE&text_color=8892A4&rank_icon=github"/>
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=nazmeejawed&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00D4FF&icon_color=7B2FBE&text_color=8892A4&rank_icon=github&cache_seconds=86400"/>
 &nbsp;&nbsp;
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nazmeejawed&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00D4FF&text_color=8892A4"/>
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nazmeejawed&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=00D4FF&text_color=8892A4&cache_seconds=86400"/>
 
 <br/><br/>
 
-<img src="https://streak-stats.demolab.com?user=nazmeejawed&theme=github-dark-blue&hide_border=true&background=0D1117&ring=00D4FF&fire=7B2FBE&currStreakLabel=00D4FF"/>
+<img src="https://streak-stats.demolab.com?user=nazmeejawed&theme=github-dark-blue&hide_border=true&background=0D1117&ring=00D4FF&fire=7B2FBE&currStreakLabel=00D4FF&cache_seconds=86400"/>
 </div>
 
 ---
