@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/nazmeejawed">
-    <img src="https://raw.githubusercontent.com/nazmeejawed/nazmeejawed/main/header.svg?v=8" width="100%" alt="Nazmee Jawed — Developer Profile"/>
+    <img src="https://raw.githubusercontent.com/nazmeejawed/nazmeejawed/main/header.svg?v=10" width="100%" alt="Nazmee Jawed — Developer Profile"/>
   </a>
 </div>
 
@@ -37,7 +37,7 @@
 ---
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/nazmeejawed/nazmeejawed/main/stats-bar.svg?v=3" width="100%" alt="Stats"/>
+  <img src="https://raw.githubusercontent.com/nazmeejawed/nazmeejawed/main/stats-bar.svg?v=5" width="100%" alt="Stats"/>
 </div>
 
 ---
