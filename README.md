@@ -214,6 +214,30 @@ object NazmeeJawed : Developer() {
 
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+
+<h4 align="center">📡 NetPulse</h4>
+<p align="center"><b>Network Device Monitoring System</b></p>
+
+```
+🌐 Real-time device status tracking
+📊 Network health dashboards
+🔔 Alerts & anomaly detection
+🔗 Full Stack monitoring solution
+```
+
+<p align="center">
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"/>
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=socketdotio&logoColor=white"/>
+</p>
+
+</td>
+<td width="50%">
+</td>
+</tr>
 </table>
 
 ---
