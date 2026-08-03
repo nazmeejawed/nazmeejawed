@@ -67,7 +67,7 @@ object NazmeeJawed : Developer() {
 | 📱 **5+ Apps** | Production mobile apps |
 | 💻 **6+ Langs** | Programming languages |
 | 🏗️ **Specialist** | Full Stack + Mobile |
-| 🔢 **DSA** | Daily grinder (Dart) |
+| 🔢 **DSA** | Daily grinder  |
 | 📐 **Design** | System Design enthusiast |
 | 🎯 **Advocate** | Clean Architecture |
 
